@@ -14,5 +14,25 @@ public class Runner
         catArrayList.add(cat4);
         Cat newCat = new Cat("New Cat");
         catArrayList.set(2, newCat);
+        System.out.println(catArrayList);
+
+        catArrayList.get(1).setName("Archie");
+        System.out.println(catArrayList);
+
+        /*
+        ArrayList dogList = new ArrayList();
+        Dog dog1 = new Dog("Spot");
+        Dog dog2 = new Dog("Benny");
+        dogList.add(dog1);
+        dogList.add(dog2);
+        dogList.get(0).bark();
+        */
+
+        ArrayList<Dog> dogList = new ArrayList<Dog>();
+        Dog dog1 = new Dog("Spot");
+        Dog dog2 = new Dog("Benny");
+        dogList.add(dog1);
+        dogList.add(dog2);
+        dogList.get(0).bark();
     }
 }
